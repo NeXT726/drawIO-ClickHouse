@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-03-23T09:10:42.167Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="VRhIIRXZ1J4d2HEgh6nK" version="17.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-24T01:46:05.600Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="Y9J-ZNROyZdmypwASkbN" version="17.1.0" type="github">
   <diagram id="ppoY22lOwb6nSqKuqoqL" name="Page-1">
-    <mxGraphModel dx="1056" dy="1793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="2012" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -47,7 +47,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_cB60vcLcajfNhmHsFNz-13" value="&lt;font style=&quot;font-size: 12px&quot;&gt;.mrk文件：数据标记文件，用于记录数据在.bin文件中的偏移量：与.bin文件一一对应&lt;br&gt;（索引项在.bin中的偏移）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="_cB60vcLcajfNhmHsFNz-13" value="&lt;font style=&quot;font-size: 12px&quot;&gt;.mrk文件：数据标记文件，用于记录数据在.bin文件中的偏移量：与.bin文件一一对应&lt;br&gt;不能常驻内存，LRU缓存策略&lt;br&gt;（索引项&lt;font color=&quot;#ff3333&quot;&gt;在.bin中的偏移&lt;/font&gt;）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="240" y="-127.5" width="490" height="280" as="geometry" />
         </mxCell>
         <mxCell id="_cB60vcLcajfNhmHsFNz-14" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=12;" vertex="1" parent="1">
@@ -128,7 +128,7 @@
         <mxCell id="_cB60vcLcajfNhmHsFNz-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="1" source="_cB60vcLcajfNhmHsFNz-35" target="_cB60vcLcajfNhmHsFNz-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_cB60vcLcajfNhmHsFNz-35" value=".idx文件：一级索引文件&lt;br&gt;（稀疏索引的每个索引的该行数据）" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="_cB60vcLcajfNhmHsFNz-35" value=".idx文件：一级索引文件，稀疏索引&lt;br&gt;常驻内存&lt;br&gt;（稀疏索引的每个索引的&lt;font color=&quot;#ff3333&quot;&gt;该行数据&lt;/font&gt;）" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="880" y="-127.5" width="490" height="280" as="geometry" />
         </mxCell>
       </root>
