@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-18T07:46:03.912Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="hzEUijWWf0W_Hfsd2dtr" version="17.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-18T07:50:23.717Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="PmMCmMpe8zQxFgFjRPHK" version="17.5.0" type="github">
   <diagram id="vCki3dOkEp2F7D4lTSnL" name="Page-1">
-    <mxGraphModel dx="816" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1005" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -79,7 +79,7 @@
           <mxGeometry y="52" width="240" height="26" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-17" value="InterpreterSelectWithUnionQuery::execute();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="827" y="1050" width="240" height="104" as="geometry" />
+          <mxGeometry x="827" y="1050" width="240" height="130" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-18" value="buildQueryPlan();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-17" vertex="1">
           <mxGeometry y="26" width="240" height="26" as="geometry" />
@@ -89,6 +89,9 @@
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-9" value="返回QueryPipelineBuilderPtr" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="mzuSB-t-ZsfAMugbphQK-17">
           <mxGeometry y="78" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-29" value="getPipeline();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="mzuSB-t-ZsfAMugbphQK-17">
+          <mxGeometry y="104" width="240" height="26" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mzuSB-t-ZsfAMugbphQK-15" target="mzuSB-t-ZsfAMugbphQK-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -193,6 +196,15 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="MUGUbLn9Fx5GaKT6HMRE-24" target="MUGUbLn9Fx5GaKT6HMRE-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-30" value="QueryPipeline QueryPipelineBuilder::getPipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1220" width="370" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-31" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MUGUbLn9Fx5GaKT6HMRE-30">
+          <mxGeometry y="26" width="370" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="MUGUbLn9Fx5GaKT6HMRE-29" target="MUGUbLn9Fx5GaKT6HMRE-30">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
