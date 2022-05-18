@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-18T07:10:45.059Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="DCKKvgB1lfpGITAmeApl" version="17.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-18T07:46:03.912Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="hzEUijWWf0W_Hfsd2dtr" version="17.5.0" type="github">
   <diagram id="vCki3dOkEp2F7D4lTSnL" name="Page-1">
-    <mxGraphModel dx="1375" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="816" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -171,10 +171,28 @@
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-20" value="ReadFromMergeTree::initializePipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1780" y="1580" width="360" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-21" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MUGUbLn9Fx5GaKT6HMRE-20">
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-21" value="getAnalysisResult();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MUGUbLn9Fx5GaKT6HMRE-20">
           <mxGeometry y="26" width="360" height="26" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="MUGUbLn9Fx5GaKT6HMRE-18" target="MUGUbLn9Fx5GaKT6HMRE-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-23" value="ReadFromMergeTree::AnalysisResult ReadFromMergeTree::getAnalysisResult();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1813" y="1670" width="460" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-24" value="selectRangesToRead();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MUGUbLn9Fx5GaKT6HMRE-23">
+          <mxGeometry y="26" width="460" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-25" value="MergeTreeDataSelectAnalysisResultPtr ReadFromMergeTree::selectRangesToRead();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1833" y="1750" width="490" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-26" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="MUGUbLn9Fx5GaKT6HMRE-25">
+          <mxGeometry y="26" width="490" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="MUGUbLn9Fx5GaKT6HMRE-21" target="MUGUbLn9Fx5GaKT6HMRE-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="MUGUbLn9Fx5GaKT6HMRE-24" target="MUGUbLn9Fx5GaKT6HMRE-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
