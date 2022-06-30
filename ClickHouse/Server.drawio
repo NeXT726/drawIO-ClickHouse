@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-30T08:05:14.089Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Rbxj5x7e9xSfSzqTxgyH" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-30T09:00:14.505Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="5vjjivewljWdIQ6fUSHi" version="18.0.7" type="github">
   <diagram id="vCki3dOkEp2F7D4lTSnL" name="Page-1">
-    <mxGraphModel dx="2009" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1187" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -177,6 +177,9 @@
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="MUGUbLn9Fx5GaKT6HMRE-2" target="MUGUbLn9Fx5GaKT6HMRE-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="sCaqfaNA4OYmf-mWPVAj-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0.231;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MUGUbLn9Fx5GaKT6HMRE-10" target="sCaqfaNA4OYmf-mWPVAj-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-10" value="QueryPipelineBuilderPtr QueryPlan::buildQueryPipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="1463" y="1418" width="370" height="52" as="geometry" />
         </mxCell>
@@ -187,7 +190,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-17" value="QueryPipelineBuilderPtr ISourceStep::updatePipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1380" y="1560" width="360" height="52" as="geometry" />
+          <mxGeometry x="1920" y="1650" width="360" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-18" value="initializePipeline();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MUGUbLn9Fx5GaKT6HMRE-17" vertex="1">
           <mxGeometry y="26" width="360" height="26" as="geometry" />
@@ -196,7 +199,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-20" value="ReadFromMergeTree::initializePipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1780" y="1580" width="360" height="52" as="geometry" />
+          <mxGeometry x="2320" y="1670" width="360" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-21" value="getAnalysisResult();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MUGUbLn9Fx5GaKT6HMRE-20" vertex="1">
           <mxGeometry y="26" width="360" height="26" as="geometry" />
@@ -205,13 +208,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-23" value="ReadFromMergeTree::AnalysisResult ReadFromMergeTree::getAnalysisResult();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1813" y="1670" width="460" height="52" as="geometry" />
+          <mxGeometry x="2353" y="1760" width="460" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-24" value="selectRangesToRead();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MUGUbLn9Fx5GaKT6HMRE-23" vertex="1">
           <mxGeometry y="26" width="460" height="26" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-25" value="MergeTreeDataSelectAnalysisResultPtr ReadFromMergeTree::selectRangesToRead();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1833" y="1750" width="490" height="52" as="geometry" />
+          <mxGeometry x="2373" y="1840" width="490" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-26" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MUGUbLn9Fx5GaKT6HMRE-25" vertex="1">
           <mxGeometry y="26" width="490" height="26" as="geometry" />
@@ -223,7 +226,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-30" value="QueryPipeline QueryPipelineBuilder::getPipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1140" y="1500" width="370" height="52" as="geometry" />
+          <mxGeometry x="1100" y="1480" width="370" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-31" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MUGUbLn9Fx5GaKT6HMRE-30" vertex="1">
           <mxGeometry y="26" width="370" height="26" as="geometry" />
@@ -238,6 +241,12 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="550" y="1790" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="sCaqfaNA4OYmf-mWPVAj-8" value="QueryPipelineBuilderPtr ITransformingStep::updatePipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="1760" width="360" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sCaqfaNA4OYmf-mWPVAj-9" value="transformPipeline();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sCaqfaNA4OYmf-mWPVAj-8">
+          <mxGeometry y="26" width="360" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
