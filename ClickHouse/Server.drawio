@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-30T04:11:22.939Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="RHPbAB99o7eliVeXqHy6" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-30T06:33:01.849Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="_beEpyaslWdQoBixXNqN" version="18.0.7" type="github">
   <diagram id="vCki3dOkEp2F7D4lTSnL" name="Page-1">
-    <mxGraphModel dx="706" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="901" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -66,14 +66,14 @@
         <mxCell id="mzuSB-t-ZsfAMugbphQK-11" value="CompletedPipelineExecutor executor(pipeline);&#xa;executor.execute();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-9" vertex="1">
           <mxGeometry y="52" width="260" height="38" as="geometry" />
         </mxCell>
-        <mxCell id="5NwX_35qLTpb5DPwdytB-1" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-9" vertex="1">
+        <mxCell id="5NwX_35qLTpb5DPwdytB-1" value="触发pipline的执行" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-9" vertex="1">
           <mxGeometry y="90" width="260" height="26" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mzuSB-t-ZsfAMugbphQK-6" target="mzuSB-t-ZsfAMugbphQK-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-13" value="executeQueryImpl;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="740" y="760" width="300" height="220" as="geometry" />
+          <mxGeometry x="740" y="760" width="300" height="292" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-40" value="ClickHouse/src/Interpreters/executeQuery.cpp" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
           <mxGeometry y="26" width="300" height="26" as="geometry" />
@@ -87,29 +87,32 @@
         <mxCell id="mzuSB-t-ZsfAMugbphQK-14" value="InterpreterFactory::get;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
           <mxGeometry y="116" width="300" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="mzuSB-t-ZsfAMugbphQK-38" value="根据AST节点的类型，构造生成相应的Interpreter" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
-          <mxGeometry y="142" width="300" height="26" as="geometry" />
+        <mxCell id="mzuSB-t-ZsfAMugbphQK-38" value="根据AST节点的类型，构造生成相应的Interpreter&#xa;此时也会进行简单的优化" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
+          <mxGeometry y="142" width="300" height="38" as="geometry" />
         </mxCell>
-        <mxCell id="mzuSB-t-ZsfAMugbphQK-15" value="interpreter-&gt;execute();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
-          <mxGeometry y="168" width="300" height="26" as="geometry" />
+        <mxCell id="mzuSB-t-ZsfAMugbphQK-15" value="BlockIO interpreter-&gt;execute();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
+          <mxGeometry y="180" width="300" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="mzuSB-t-ZsfAMugbphQK-39" value="对语法树进行“解释”，返回query plan" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
-          <mxGeometry y="194" width="300" height="26" as="geometry" />
+        <mxCell id="mzuSB-t-ZsfAMugbphQK-39" value="对语法树进行“解释”，返回query plan&#xa;BlockIO封装了当前QueryPipeline实例，以及相应的输入、输出流的指针，方便根据Pipeline中的每一个IProcessor实例的状态，触发流的读写以及注册流上的事件，比如Query工作流完成事件。" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;whiteSpace=wrap;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
+          <mxGeometry y="206" width="300" height="86" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-17" value="InterpreterSelectWithUnionQuery::execute();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="970" y="1050" width="240" height="130" as="geometry" />
+          <mxGeometry x="850" y="1160" width="330" height="156" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-18" value="buildQueryPlan();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-17" vertex="1">
-          <mxGeometry y="26" width="240" height="26" as="geometry" />
+          <mxGeometry y="26" width="330" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="mzuSB-t-ZsfAMugbphQK-19" value="query_plan.buildQueryPipeline();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-17" vertex="1">
-          <mxGeometry y="52" width="240" height="26" as="geometry" />
+        <mxCell id="sCaqfaNA4OYmf-mWPVAj-2" value="生成一棵逻辑计划树" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="mzuSB-t-ZsfAMugbphQK-17">
+          <mxGeometry y="52" width="330" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-9" value="返回QueryPipelineBuilderPtr" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-17" vertex="1">
-          <mxGeometry y="78" width="240" height="26" as="geometry" />
+        <mxCell id="mzuSB-t-ZsfAMugbphQK-19" value="QueryPipelineBuilderPtr query_plan.buildQueryPipeline();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-17" vertex="1">
+          <mxGeometry y="78" width="330" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MUGUbLn9Fx5GaKT6HMRE-9" value="生成一棵物理计划树，即流水线" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-17" vertex="1">
+          <mxGeometry y="104" width="330" height="26" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-29" value="getPipeline();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-17" vertex="1">
-          <mxGeometry y="104" width="240" height="26" as="geometry" />
+          <mxGeometry y="130" width="330" height="26" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mzuSB-t-ZsfAMugbphQK-15" target="mzuSB-t-ZsfAMugbphQK-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -172,7 +175,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-10" value="QueryPipelineBuilderPtr QueryPlan::buildQueryPipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="1312" width="370" height="52" as="geometry" />
+          <mxGeometry x="1080" y="1422" width="370" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-11" value="updatePipeline();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MUGUbLn9Fx5GaKT6HMRE-10" vertex="1">
           <mxGeometry y="26" width="370" height="26" as="geometry" />
@@ -181,7 +184,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-17" value="QueryPipelineBuilderPtr ISourceStep::updatePipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1380" y="1453" width="360" height="52" as="geometry" />
+          <mxGeometry x="1370" y="1570" width="360" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-18" value="initializePipeline();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MUGUbLn9Fx5GaKT6HMRE-17" vertex="1">
           <mxGeometry y="26" width="360" height="26" as="geometry" />
@@ -217,7 +220,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-30" value="QueryPipeline QueryPipelineBuilder::getPipeline();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="840" y="1220" width="370" height="52" as="geometry" />
+          <mxGeometry x="890" y="1518" width="370" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MUGUbLn9Fx5GaKT6HMRE-31" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MUGUbLn9Fx5GaKT6HMRE-30" vertex="1">
           <mxGeometry y="26" width="370" height="26" as="geometry" />
