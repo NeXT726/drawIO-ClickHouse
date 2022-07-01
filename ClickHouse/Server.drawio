@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-01T02:40:00.213Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="C8jPnJpEsvQRFMTvGlNB" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-01T02:48:11.779Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="MivQrCbMDRglgIEvJknM" version="18.0.7" type="github">
   <diagram id="vCki3dOkEp2F7D4lTSnL" name="Page-1">
-    <mxGraphModel dx="1187" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="843" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -93,7 +93,7 @@
         <mxCell id="mzuSB-t-ZsfAMugbphQK-15" value="BlockIO interpreter-&gt;execute();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
           <mxGeometry y="180" width="300" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="mzuSB-t-ZsfAMugbphQK-39" value="对语法树进行“解释”，返回query plan&#xa;BlockIO封装了当前QueryPipeline实例，以及相应的输入、输出流的指针，方便根据Pipeline中的每一个IProcessor实例的状态，触发流的读写以及注册流上的事件，比如Query工作流完成事件。" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;whiteSpace=wrap;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
+        <mxCell id="mzuSB-t-ZsfAMugbphQK-39" value="对语法树进行“解释”&#xa;BlockIO封装了当前QueryPipeline实例，以及相应的输入、输出流的指针，方便根据Pipeline中的每一个IProcessor实例的状态，触发流的读写以及注册流上的事件，比如Query工作流完成事件。" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;whiteSpace=wrap;" parent="mzuSB-t-ZsfAMugbphQK-13" vertex="1">
           <mxGeometry y="206" width="300" height="86" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-17" value="InterpreterSelectWithUnionQuery::execute();" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;whiteSpace=wrap;" parent="1" vertex="1">
