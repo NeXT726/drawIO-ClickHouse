@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-07T09:38:59.739Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Z9IS8bzxhZtpodX6buvb" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-07T09:55:27.969Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="BL_MYNwyKaB_WiFHfeM5" version="18.0.7" type="github">
   <diagram id="QgGctiaMu-XKdfcXtrG8" name="Page-1">
     <mxGraphModel dx="1595" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -492,6 +492,66 @@
         </mxCell>
         <mxCell id="PkpWNehBuL-gXGb-69BD-163" value="" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-155">
           <mxGeometry y="216" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="PkpWNehBuL-gXGb-69BD-164" target="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-164" value="using FreeThreadPool = ThreadPoolImpl&lt;std::thread&gt;;&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="2860" y="750" width="470" height="56" as="geometry">
+            <mxRectangle x="2070" y="140" width="70" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-173" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PkpWNehBuL-gXGb-69BD-164" target="PkpWNehBuL-gXGb-69BD-155">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3090" y="640" as="sourcePoint" />
+            <mxPoint x="3250" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2820" y="750" />
+              <mxPoint x="2820" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-174" value="parent" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;labelBorderColor=none;" connectable="0" vertex="1" parent="PkpWNehBuL-gXGb-69BD-173">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="-40" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-175" value="child" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;labelBorderColor=none;" connectable="0" vertex="1" parent="PkpWNehBuL-gXGb-69BD-173">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-10" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-176" value="template &lt;typename Thread&gt;&#xa;class ThreadPoolImpl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="2860" y="834" width="470" height="274" as="geometry">
+            <mxRectangle x="2070" y="140" width="70" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-177" value="" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="36" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-178" value="using Job = std::function&lt;void()&gt;;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="66" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-179" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="92" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-180" value="    void scheduleOrThrowOnError(Job job, int priority = 0);" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="118" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-186" value="添加一个新任务，" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="144" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-181" value="    bool trySchedule(Job job, int priority = 0, uint64_t wait_microseconds = 0) noexcept;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="170" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-182" value="类似于 scheduleOrThrowOnError(...)，等待指定的时间并安排作业或返回 false&#xa;" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="196" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-183" value="    void scheduleOrThrow(Job job, int priority = 0, uint64_t wait_microseconds = 0);" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="222" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PkpWNehBuL-gXGb-69BD-184" value="类似于 scheduleOrThrowOnError(...)，等待指定的时间并安排作业或抛出异常" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="PkpWNehBuL-gXGb-69BD-176">
+          <mxGeometry y="248" width="470" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
