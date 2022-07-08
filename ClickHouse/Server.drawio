@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-08T03:49:51.901Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="pMm4UMbVHViBa1zW86uF" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-08T03:51:48.199Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="AkK3ohCoax_fIDsLL6N4" version="18.0.7" type="github">
   <diagram id="vCki3dOkEp2F7D4lTSnL" name="Page-1">
-    <mxGraphModel dx="2061" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2888" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -275,12 +275,12 @@
         <mxCell id="sCaqfaNA4OYmf-mWPVAj-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mzuSB-t-ZsfAMugbphQK-7" target="sCaqfaNA4OYmf-mWPVAj-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="K7McRCffOxK81cmMXOIB-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="sCaqfaNA4OYmf-mWPVAj-17" target="K7McRCffOxK81cmMXOIB-7">
+        <mxCell id="K7McRCffOxK81cmMXOIB-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sCaqfaNA4OYmf-mWPVAj-17" target="K7McRCffOxK81cmMXOIB-7">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="170" y="1516" />
-              <mxPoint x="170" y="1820" />
-              <mxPoint x="-5" y="1820" />
+              <mxPoint x="170" y="1950" />
+              <mxPoint x="-185" y="1950" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -309,7 +309,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="K7McRCffOxK81cmMXOIB-1" value="PipelineExcutor-&gt;execute()" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-160" y="1680" width="310" height="104" as="geometry" />
+          <mxGeometry x="-920" y="2320" width="310" height="104" as="geometry" />
         </mxCell>
         <mxCell id="K7McRCffOxK81cmMXOIB-2" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="K7McRCffOxK81cmMXOIB-1">
           <mxGeometry y="26" width="310" height="26" as="geometry" />
@@ -320,26 +320,20 @@
         <mxCell id="K7McRCffOxK81cmMXOIB-4" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="K7McRCffOxK81cmMXOIB-1">
           <mxGeometry y="78" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="K7McRCffOxK81cmMXOIB-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="K7McRCffOxK81cmMXOIB-6" target="K7McRCffOxK81cmMXOIB-1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="170" y="1550" />
-              <mxPoint x="170" y="1640" />
-              <mxPoint x="-5" y="1640" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="K7McRCffOxK81cmMXOIB-7" value="bool PullingAsyncPipelineExecutor::pull(Chunk &amp; chunk, uint64_t milliseconds)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-270" y="2040" width="440" height="104" as="geometry" />
+          <mxGeometry x="-480" y="2040" width="590" height="130" as="geometry" />
         </mxCell>
         <mxCell id="K7McRCffOxK81cmMXOIB-8" value="data = std::make_unique&lt;Data&gt;();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="K7McRCffOxK81cmMXOIB-7">
-          <mxGeometry y="26" width="440" height="26" as="geometry" />
+          <mxGeometry y="26" width="590" height="26" as="geometry" />
         </mxCell>
         <mxCell id="K7McRCffOxK81cmMXOIB-9" value="        data-&gt;executor = std::make_shared&lt;PipelineExecutor&gt;(pipeline.processors, pipeline.process_list_element);&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="K7McRCffOxK81cmMXOIB-7">
-          <mxGeometry y="52" width="440" height="26" as="geometry" />
+          <mxGeometry y="52" width="590" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="K7McRCffOxK81cmMXOIB-10" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="K7McRCffOxK81cmMXOIB-7">
-          <mxGeometry y="78" width="440" height="26" as="geometry" />
+        <mxCell id="K7McRCffOxK81cmMXOIB-10" value="        data-&gt;thread = ThreadFromGlobalPool(std::move(func));&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="K7McRCffOxK81cmMXOIB-7">
+          <mxGeometry y="78" width="590" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="K7McRCffOxK81cmMXOIB-18" value="其中func为PipelineExcutor-&gt;execute()，也就是在线程池中执行PipelineExcutor-&gt;execute()" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="K7McRCffOxK81cmMXOIB-7">
+          <mxGeometry y="104" width="590" height="26" as="geometry" />
         </mxCell>
         <mxCell id="K7McRCffOxK81cmMXOIB-13" value="PipelineExecutor::PipelineExecutor(Processors &amp; processors, QueryStatus * elem)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-460" y="2320" width="630" height="104" as="geometry" />
@@ -361,6 +355,9 @@
               <mxPoint x="-145" y="2280" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="K7McRCffOxK81cmMXOIB-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="K7McRCffOxK81cmMXOIB-10" target="K7McRCffOxK81cmMXOIB-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
