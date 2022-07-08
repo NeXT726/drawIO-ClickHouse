@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-08T03:51:48.199Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="AkK3ohCoax_fIDsLL6N4" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-08T03:53:10.519Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="AaFMWLfzM2q0FsKo-YQl" version="18.0.7" type="github">
   <diagram id="vCki3dOkEp2F7D4lTSnL" name="Page-1">
     <mxGraphModel dx="2888" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -296,7 +296,7 @@
         <mxCell id="sCaqfaNA4OYmf-mWPVAj-19" value="sendData(block);" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="sCaqfaNA4OYmf-mWPVAj-17" vertex="1">
           <mxGeometry y="90" width="310" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="sCaqfaNA4OYmf-mWPVAj-20" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="sCaqfaNA4OYmf-mWPVAj-17" vertex="1">
+        <mxCell id="sCaqfaNA4OYmf-mWPVAj-20" value="将查询结果写入buffer中，发送回client" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="sCaqfaNA4OYmf-mWPVAj-17" vertex="1">
           <mxGeometry y="116" width="310" height="26" as="geometry" />
         </mxCell>
         <mxCell id="sCaqfaNA4OYmf-mWPVAj-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="mzuSB-t-ZsfAMugbphQK-7" target="sCaqfaNA4OYmf-mWPVAj-17" edge="1">
