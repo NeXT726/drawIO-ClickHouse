@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-14T05:57:42.210Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="zItTvNB5mZXZgqcgLlsD" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-14T06:00:55.523Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Qp5iZOIZ_17WbuGKA_uV" version="18.0.7" type="github">
   <diagram id="QgGctiaMu-XKdfcXtrG8" name="Page-1">
     <mxGraphModel dx="2342" dy="2052" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1158,7 +1158,7 @@
           <mxGeometry y="208" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="IQTYQkikppVQnb9sFK9S-87" value="struct MergeTreeDataPartChecksums" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="5560" y="440" width="510" height="540" as="geometry">
+          <mxGeometry x="5560" y="440" width="510" height="610" as="geometry">
             <mxRectangle x="30" y="170" width="70" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1204,11 +1204,17 @@
         <mxCell id="IQTYQkikppVQnb9sFK9S-114" value="bool read(ReadBuffer &amp; in);&#xa;bool read(ReadBuffer &amp; in, size_t format_version);&#xa;    bool readV2(ReadBuffer &amp; in);&#xa;    bool readV3(ReadBuffer &amp; in);&#xa;    bool readV4(ReadBuffer &amp; from);" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-87">
           <mxGeometry y="396" width="510" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="IQTYQkikppVQnb9sFK9S-124" value="从readbuffer中读取文件的元数据信息，保存在当前checksums中" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-87">
-          <mxGeometry y="480" width="510" height="30" as="geometry" />
+        <mxCell id="IQTYQkikppVQnb9sFK9S-124" value="从readbuffer中读取文件的元数据信息，保存在当前checksums中；不同版本的read对应不同的信息保存格式" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;labelBorderColor=none;whiteSpace=wrap;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-87">
+          <mxGeometry y="480" width="510" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="IQTYQkikppVQnb9sFK9S-125" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-87">
-          <mxGeometry y="510" width="510" height="30" as="geometry" />
+        <mxCell id="IQTYQkikppVQnb9sFK9S-125" value="    void write(WriteBuffer &amp; to) const;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-87">
+          <mxGeometry y="520" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-126" value="以v4版本的格式将checksums的信息写入writebuffer中" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-87">
+          <mxGeometry y="550" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-127" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-87">
+          <mxGeometry y="580" width="510" height="30" as="geometry" />
         </mxCell>
         <mxCell id="IQTYQkikppVQnb9sFK9S-99" value="struct MergeTreeDataPartChecksum&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="5560" y="1190" width="650" height="312" as="geometry">
