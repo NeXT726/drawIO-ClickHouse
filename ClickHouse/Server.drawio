@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-12T06:03:30.907Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="C23g8B8A-1cgptTSBYzI" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-14T10:19:18.873Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="WykegfKSyz4w2DcffUI6" version="18.0.7" type="github">
   <diagram id="vCki3dOkEp2F7D4lTSnL" name="Page-1">
-    <mxGraphModel dx="2803" dy="670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2634" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -43,7 +43,7 @@
           <mxGeometry y="52" width="240" height="26" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-5" value="TCPHandler::runImpl()" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="-90" y="1076" width="240" height="176" as="geometry" />
+          <mxGeometry x="-90" y="1076" width="240" height="186" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-6" value="executeQuery;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-5" vertex="1">
           <mxGeometry y="26" width="240" height="26" as="geometry" />
@@ -51,11 +51,11 @@
         <mxCell id="mzuSB-t-ZsfAMugbphQK-7" value="processOrdinaryQueryWithProcessors();&#xa;或&#xa;processInsertQuery();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-5" vertex="1">
           <mxGeometry y="52" width="240" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="sCaqfaNA4OYmf-mWPVAj-28" value="1.创建pipelineExcutor执行pipeline的计算&#xa;2.读写pipeline的输入输出管道，与client通信" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" parent="mzuSB-t-ZsfAMugbphQK-5" vertex="1">
-          <mxGeometry y="110" width="240" height="40" as="geometry" />
+        <mxCell id="sCaqfaNA4OYmf-mWPVAj-28" value="1.创建pipelineExcutor执行pipeline的计算&#xa;2.读写pipeline的输入输出管道，与client通信" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;labelBorderColor=none;whiteSpace=wrap;" parent="mzuSB-t-ZsfAMugbphQK-5" vertex="1">
+          <mxGeometry y="110" width="240" height="50" as="geometry" />
         </mxCell>
         <mxCell id="sCaqfaNA4OYmf-mWPVAj-11" value="" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mzuSB-t-ZsfAMugbphQK-5" vertex="1">
-          <mxGeometry y="150" width="240" height="26" as="geometry" />
+          <mxGeometry y="160" width="240" height="26" as="geometry" />
         </mxCell>
         <mxCell id="mzuSB-t-ZsfAMugbphQK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mzuSB-t-ZsfAMugbphQK-3" target="mzuSB-t-ZsfAMugbphQK-5" edge="1">
           <mxGeometry relative="1" as="geometry">
