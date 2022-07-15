@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-14T10:02:52.468Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Hcj-6Q-CqI4ADsZ4E4ja" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-15T01:40:33.745Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="aAZaWiOCW9Njv60Nuqzv" version="18.0.7" type="github">
   <diagram id="QgGctiaMu-XKdfcXtrG8" name="Page-1">
-    <mxGraphModel dx="1807" dy="1740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1938" dy="1816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1556,6 +1556,53 @@
         </mxCell>
         <mxCell id="IQTYQkikppVQnb9sFK9S-211" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=default;" edge="1" parent="1" source="IQTYQkikppVQnb9sFK9S-205" target="IQTYQkikppVQnb9sFK9S-194">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-221" value="class IMergeTreeReader : private boost::noncopyable&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="8070" y="150" width="840" height="312" as="geometry">
+            <mxRectangle x="30" y="170" width="70" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-222" value="" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="26" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-223" value="    NamesAndTypesList columns;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="52" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-229" value="    NamesAndTypesList part_columns;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="78" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-230" value="    UncompressedCache * uncompressed_cache;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="104" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-231" value="    MarkCache * mark_cache;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="130" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-232" value="    const MergeTreeData &amp; storage;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="156" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-224" value="    virtual size_t readRows(size_t from_mark, size_t current_task_last_mark,bool continue_reading, size_t max_rows_to_read, Columns &amp; res_columns) = 0;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="182" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-225" value="    void fillMissingColumns(Columns &amp; res_columns, bool &amp; should_evaluate_missing_defaults, size_t num_rows) const;&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="208" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-226" value="    void evaluateMissingDefaults(Block additional_columns, Columns &amp; res_columns) const;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="234" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-227" value="    NameAndTypePair getColumnFromPart(const NameAndTypePair &amp; required_column) const;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="260" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-228" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IQTYQkikppVQnb9sFK9S-221">
+          <mxGeometry y="286" width="840" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IQTYQkikppVQnb9sFK9S-233" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontColor=default;" edge="1" parent="1" source="IQTYQkikppVQnb9sFK9S-232" target="IQTYQkikppVQnb9sFK9S-194">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="8020" y="319" />
+              <mxPoint x="8020" y="110" />
+              <mxPoint x="6790" y="110" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
