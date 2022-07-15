@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-15T05:57:06.378Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="ax2Cnie2bh67-0qdg3h1" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-15T06:00:01.517Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="cfLt95fX0Vie9Q6z9Ylf" version="18.0.7" type="github">
   <diagram id="QgGctiaMu-XKdfcXtrG8" name="Page-1">
     <mxGraphModel dx="1753" dy="1708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1867,33 +1867,48 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-80" value="struct MergeTreeBlockSizePredictor&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="9020" y="1331" width="510" height="234" as="geometry">
+          <mxGeometry x="9020" y="1331" width="510" height="504" as="geometry">
             <mxRectangle x="30" y="170" width="70" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-81" value="" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
           <mxGeometry y="26" width="510" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s-D2260iFp35YOQshI_U-82" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
+        <mxCell id="s-D2260iFp35YOQshI_U-82" value="    MergeTreeData::DataPartPtr data_part;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
           <mxGeometry y="52" width="510" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s-D2260iFp35YOQshI_U-83" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
-          <mxGeometry y="78" width="510" height="26" as="geometry" />
+        <mxCell id="s-D2260iFp35YOQshI_U-83" value="    struct ColumnInfo&#xa;    {&#xa;        String name;&#xa;        double bytes_per_row_global = 0;&#xa;        double bytes_per_row = 0;&#xa;        size_t size_bytes = 0;&#xa;    };&#xa;    std::vector&lt;ColumnInfo&gt; dynamic_columns_infos;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
+          <mxGeometry y="78" width="510" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-90" value="    size_t max_size_per_row_fixed = 0;&#xa;    double max_size_per_row_dynamic = 0;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
+          <mxGeometry y="200" width="510" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-94" value="    size_t number_of_rows_in_part;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
+          <mxGeometry y="240" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-93" value="    size_t block_size_bytes = 0;&#xa;    size_t block_size_rows = 0;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
+          <mxGeometry y="266" width="510" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-92" value="    double bytes_per_row_current = 0;&#xa;    double bytes_per_row_global = 0;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
+          <mxGeometry y="310" width="510" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-91" value="    double filtered_rows_ratio = 0;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
+          <mxGeometry y="348" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-84" value="    void startBlock();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
-          <mxGeometry y="104" width="510" height="26" as="geometry" />
+          <mxGeometry y="374" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-86" value="    void update(const Block &amp; sample_block, const Columns &amp; columns, size_t num_rows, double decay = calculateDecay());" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
-          <mxGeometry y="130" width="510" height="26" as="geometry" />
+          <mxGeometry y="400" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-87" value="    inline size_t getBlockSize() const&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
-          <mxGeometry y="156" width="510" height="26" as="geometry" />
+          <mxGeometry y="426" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-88" value="    inline size_t estimateNumRowsForMaxSizeColumn(size_t bytes_quota) const&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
-          <mxGeometry y="182" width="510" height="26" as="geometry" />
+          <mxGeometry y="452" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-89" value="    inline size_t estimateNumRows(size_t bytes_quota) const&#xa;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-80">
-          <mxGeometry y="208" width="510" height="26" as="geometry" />
+          <mxGeometry y="478" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s-D2260iFp35YOQshI_U-59" target="s-D2260iFp35YOQshI_U-80">
           <mxGeometry relative="1" as="geometry">
