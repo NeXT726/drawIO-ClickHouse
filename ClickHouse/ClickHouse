@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-15T05:35:54.104Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="8vac3jgMJbkXt6NQoIaL" version="18.0.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-15T08:08:58.212Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="rvK-4xyPPieswbWrt_1W" version="18.0.7" type="github" pages="2">
   <diagram id="ppoY22lOwb6nSqKuqoqL" name="mergetree文件结构">
     <mxGraphModel dx="1666" dy="2140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -315,8 +315,8 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="100" y="580" />
-              <mxPoint x="205" y="580" />
-              <mxPoint x="205" y="40" />
+              <mxPoint x="240" y="580" />
+              <mxPoint x="240" y="40" />
               <mxPoint x="525" y="40" />
             </Array>
           </mxGeometry>
