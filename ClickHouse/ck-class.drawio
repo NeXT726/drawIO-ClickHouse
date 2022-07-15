@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-15T07:48:49.901Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Raghq--cVGs2J4iboAhG" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-15T07:51:39.597Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Sh86wS-pF4Oo0aFmkg5O" version="18.0.7" type="github">
   <diagram id="QgGctiaMu-XKdfcXtrG8" name="Page-1">
     <mxGraphModel dx="1902" dy="1795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2034,7 +2034,7 @@
           <mxGeometry y="182" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-133" value="class DelayedStream" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="10370" y="572" width="510" height="390" as="geometry">
+          <mxGeometry x="10370" y="572" width="510" height="416" as="geometry">
             <mxRectangle x="30" y="170" width="70" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -2053,19 +2053,19 @@
         <mxCell id="s-D2260iFp35YOQshI_U-135" value="        size_t current_task_last_mark = 0;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
           <mxGeometry y="130" width="510" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s-D2260iFp35YOQshI_U-147" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
+        <mxCell id="s-D2260iFp35YOQshI_U-147" value="        IMergeTreeReader * merge_tree_reader = nullptr;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
           <mxGeometry y="156" width="510" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s-D2260iFp35YOQshI_U-143" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
+        <mxCell id="s-D2260iFp35YOQshI_U-143" value="        const MergeTreeIndexGranularity * index_granularity = nullptr;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
           <mxGeometry y="182" width="510" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s-D2260iFp35YOQshI_U-142" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
+        <mxCell id="s-D2260iFp35YOQshI_U-142" value="        bool continue_reading = false;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
           <mxGeometry y="208" width="510" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s-D2260iFp35YOQshI_U-141" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
+        <mxCell id="s-D2260iFp35YOQshI_U-141" value="        bool is_finished = true;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
           <mxGeometry y="234" width="510" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s-D2260iFp35YOQshI_U-136" value="        size_t read(Columns &amp; columns, size_t from_mark, size_t offset, size_t num_rows);" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
+        <mxCell id="s-D2260iFp35YOQshI_U-136" value="        size_t read(Columns &amp; columns, size_t from_mark, size_t offset, size_t num_rows);" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
           <mxGeometry y="260" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="s-D2260iFp35YOQshI_U-137" value="Read @num_rows rows from @from_mark starting from @offset row" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
@@ -2077,8 +2077,11 @@
         <mxCell id="s-D2260iFp35YOQshI_U-139" value="        /// Skip extra rows to current_offset and perform actual reading&#xa;" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
           <mxGeometry y="338" width="510" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s-D2260iFp35YOQshI_U-140" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
+        <mxCell id="s-D2260iFp35YOQshI_U-140" value="size_t position() const;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
           <mxGeometry y="364" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-148" value="size_t readRows(Columns &amp; columns, size_t num_rows);" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-133">
+          <mxGeometry y="390" width="510" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
