@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-18T03:39:34.028Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="DuJTcveUbzMYPHvRQzX3" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-18T06:05:39.872Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="VfnrjzePrB5Kdw1Q7llg" version="18.0.7" type="github">
   <diagram id="QgGctiaMu-XKdfcXtrG8" name="Page-1">
-    <mxGraphModel dx="2910" dy="2383" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1536" dy="1582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1005,7 +1005,7 @@
           <mxGeometry y="364" width="510" height="26" as="geometry" />
         </mxCell>
         <mxCell id="IQTYQkikppVQnb9sFK9S-34" value="" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="10370" y="-120" width="510" height="208" as="geometry">
+          <mxGeometry x="10980" y="-110" width="510" height="208" as="geometry">
             <mxRectangle x="30" y="170" width="70" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -2244,6 +2244,32 @@
               <mxPoint x="10605" y="1830" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-195" value="class MergeTreeReaderStream&#xa;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="11570" y="150" width="510" height="208" as="geometry">
+            <mxRectangle x="30" y="170" width="70" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-196" value="" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#333333;" vertex="1" parent="s-D2260iFp35YOQshI_U-195">
+          <mxGeometry y="26" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-197" value="    ReadBuffer * data_buffer;&#xa;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-195">
+          <mxGeometry y="52" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-198" value="void seekToMark(size_t index);" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-195">
+          <mxGeometry y="78" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-199" value=" void seekToStart();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-195">
+          <mxGeometry y="104" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-200" value="ReadBuffer * getDataBuffer();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-195">
+          <mxGeometry y="130" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-201" value=" CompressedReadBufferBase * getCompressedDataBuffer();" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-195">
+          <mxGeometry y="156" width="510" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s-D2260iFp35YOQshI_U-202" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-D2260iFp35YOQshI_U-195">
+          <mxGeometry y="182" width="510" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
