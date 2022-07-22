@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-22T03:04:18.243Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="GG09umMTiIxKYd3RvXBJ" version="18.0.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-22T03:07:48.202Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="l4euW2LQuurtcFJpN7qm" version="18.0.7" type="github" pages="2">
   <diagram id="gh1aMVrpoYGOFsz5a-QJ" name="server流程">
-    <mxGraphModel dx="2910" dy="1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2787" dy="1142" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -90,25 +90,25 @@
         <mxCell id="mQqlqZmicLO6QilcAuNk-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pW9ZL00Uw7yHDuVD0_7p-15" target="pW9ZL00Uw7yHDuVD0_7p-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mQqlqZmicLO6QilcAuNk-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="mQqlqZmicLO6QilcAuNk-3" value="" style="rounded=0;html=1;fontSize=24;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="390" width="190" height="980" as="geometry" />
         </mxCell>
-        <mxCell id="mQqlqZmicLO6QilcAuNk-4" value="解析query字符串，生成语法树AST" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="mQqlqZmicLO6QilcAuNk-4" value="解析query字符串，生成语法树AST" style="rounded=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=24;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="390" width="190" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="mQqlqZmicLO6QilcAuNk-5" value="生成query plan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="mQqlqZmicLO6QilcAuNk-5" value="生成query plan" style="rounded=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=24;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="390" y="180" width="190" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="mQqlqZmicLO6QilcAuNk-6" value="生成processor，组成query pipeline流水线" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="mQqlqZmicLO6QilcAuNk-6" value="生成processor，组成query pipeline流水线" style="rounded=0;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=24;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="390" y="410" width="190" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="mQqlqZmicLO6QilcAuNk-7" value="生成执行图，便于在processor间传递数据和状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="mQqlqZmicLO6QilcAuNk-7" value="生成执行图，便于在processor间传递状态和数据" style="rounded=0;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=24;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="390" y="620" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="mQqlqZmicLO6QilcAuNk-8" value="执行操作，通过Reader读取数据" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="mQqlqZmicLO6QilcAuNk-8" value="执行操作，通过Reader读取数据" style="rounded=0;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontColor=#FF0000;fontSize=24;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="390" y="760" width="190" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="mQqlqZmicLO6QilcAuNk-9" value="将返回数据发送给客户端" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="mQqlqZmicLO6QilcAuNk-9" value="将返回数据发送给客户端" style="rounded=0;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=24;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="390" y="910" width="190" height="70" as="geometry" />
         </mxCell>
       </root>
